@@ -1,0 +1,16 @@
+/* Global styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; color: #222; }
+
+.container { max-width: 800px; margin: 0 auto; padding: 16px; }
+
+.toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+.toolbar input { flex: 1; padding: 8px 10px; border: 1px solid #d0d7de; border-radius: 6px; }
+.toolbar select { padding: 8px 10px; border: 1px solid #d0d7de; border-radius: 6px; }
+.toolbar button { padding: 8px 12px; border: 1px solid #d0d7de; background: #f6f8fa; color: #24292f; border-radius: 6px; cursor: pointer; }
+.toolbar button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.row { padding: 10px 12px; border-bottom: 1px solid #eee; display: flex; align-items: center; }
+.row a { color: #0969da; text-decoration: none; }
+.row:hover { background: #f9fafb; }
+
