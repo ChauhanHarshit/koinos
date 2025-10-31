@@ -6,7 +6,7 @@
 - Added cached stats in `backend/src/routes/stats.js` using file `mtimeMs` invalidation and in-flight coalescing; used `mean` util.
 - Extracted Express app to `backend/src/app.js` and kept `backend/src/index.js` for bootstrapping only.
 - Added Jest tests with Supertest for items routes (list, search, detail, 404).
-- Fixed a bug in `backend/src/routes/stats.js` of routing to `items.json`
+- Corrected DATA_PATH in backend/src/routes/stats.js to point to ../../../data/items.json
 
 Trade-offs
 - In-memory caches reset on process restart and aren’t shared across replicas; acceptable for this exercise.
